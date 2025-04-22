@@ -21,10 +21,10 @@ Pipeline steps:
 
 Usage - running complete pipeline: 
 1. Open MATLAB
-2. Unzip all folders in birdsongf_music_speech_comp
+2. Unzip all folders in birdsongf_music_speech_comp and create new folders: human_speech_data, human_music_data and birdsong_data
 3. If birdsong file preprocessing is not needed (i.e files are already selected for fullsongs), add them to birdsong_data folder and skip to step 6
-4. If preprocessing is needed, add birdsongs with evsonganaly annotations (onsets, offsets, label) in birdsong_files_raw folder
-5. Run >> mps_preprocess ('./birdsong_files_raw', './birdsong_data')
+4. If preprocessing is needed, add birdsongs with evsonganaly annotations (onsets, offsets, label) in a new folder
+5. Run >> mps_preprocess ('./NEW_FOLDER_NAME', './birdsong_data')
 6. Download IDS_corpus_raw from zenoto website. (https://zenodo.org/record/552161) and unzip.
 7. Search for all '*C.wav' files in IDS_corpus_raw and add to ./human_music_data. 
 8. Search for all '*D.wav' files in IDS_corpus_raw and add to ./human_speech_data.
