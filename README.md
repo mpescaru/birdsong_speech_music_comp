@@ -33,7 +33,7 @@ Usage - running complete pipeline:
 10. In prep_paths function, change the path_main_fold parameter to the path to the birdsong_speech_music_comp folder on your device
 11. In Matlab Command Window, run: >> run_pipeline
 
-
+NOTE: Brainstorm database is pre-loaded with all MPS data. Do skip computation of modulation power spectra step (time-consuming step), comment out generate_mps() lines in run_pipeline and skip steps 2-8.
 
 Sources: birdsong files extracted from xeno-canto database (xeno-canto.org) 
 
