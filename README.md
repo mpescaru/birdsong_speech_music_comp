@@ -21,7 +21,7 @@ Pipeline steps:
 
 Usage - running complete pipeline: 
 1. Open MATLAB
-2. Unzip all folders in birdsongf_music_speech_comp and create new folders: human_speech_data, human_music_data and birdsong_data
+2. Unzip all folders in birdsong_music_speech_comp and create new folders: human_speech_data, human_music_data and birdsong_data
 3. If birdsong file preprocessing is not needed (i.e files are already selected for fullsongs), add them to birdsong_data folder and skip to step 6
 4. If preprocessing is needed, add birdsongs with evsonganaly annotations (onsets, offsets, label) in a new folder
 5. Run >> mps_preprocess ('./NEW_FOLDER_NAME', './birdsong_data')
@@ -33,7 +33,7 @@ Usage - running complete pipeline:
 10. In prep_paths function, change the path_main_fold parameter to the path to the birdsong_speech_music_comp folder on your device
 11. In Matlab Command Window, run: >> run_pipeline
 
-NOTE: all MPSs are already computed and stored in the brainstorm database, so generate_mps lines in run_pipeline can be commented out and steps 2-7 can be skipped. 
+
 
 Sources: birdsong files extracted from xeno-canto database (xeno-canto.org) 
 
