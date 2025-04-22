@@ -21,16 +21,17 @@ Pipeline steps:
 
 Usage - running complete pipeline: 
 1. Open MATLAB
-2. If birdsong file preprocessing is not needed (i.e files are already selected for fullsongs), add them to birdsong_data folder and skip to step 5
-3. If preprocessing is needed, add birdsongs with evsonganaly annotations (onsets, offsets, label) in birdsong_files_raw folder
-4. Run >> mps_preprocess ('./birdsong_files_raw', './birdsong_data')
-5. Download IDS_corpus_raw from zenoto website. (https://zenodo.org/record/552161) and unzip.
-6. Search for all '*C.wav' files in IDS_corpus_raw and add to ./human_music_data. 
-7. Search for all '*D.wav' files in IDS_corpus_raw and add to ./human_speech_data.
-8. Download brainstorm (only necessary once). For instructions, see    https://neuroimage.usc.edu/brainstorm/Tutorials/CreateProtocol#Starting_Brainstorm_for_the_first_time
+2. Unzip all folders in birdsongf_music_speech_comp
+3. If birdsong file preprocessing is not needed (i.e files are already selected for fullsongs), add them to birdsong_data folder and skip to step 6
+4. If preprocessing is needed, add birdsongs with evsonganaly annotations (onsets, offsets, label) in birdsong_files_raw folder
+5. Run >> mps_preprocess ('./birdsong_files_raw', './birdsong_data')
+6. Download IDS_corpus_raw from zenoto website. (https://zenodo.org/record/552161) and unzip.
+7. Search for all '*C.wav' files in IDS_corpus_raw and add to ./human_music_data. 
+8. Search for all '*D.wav' files in IDS_corpus_raw and add to ./human_speech_data.
+9. Download brainstorm (only necessary once). For instructions, see    https://neuroimage.usc.edu/brainstorm/Tutorials/CreateProtocol#Starting_Brainstorm_for_the_first_time
    Select birdsong_speech_music_comp/brainstorm_database as brainstorm databse
-9. In prep_paths function, change the path_main_fold parameter to the path to the birdsong_speech_music_comp folder on your device
-10. In Matlab Command Window, run: >> run_pipeline
+10. In prep_paths function, change the path_main_fold parameter to the path to the birdsong_speech_music_comp folder on your device
+11. In Matlab Command Window, run: >> run_pipeline
 
 NOTE: all MPSs are already computed and stored in the brainstorm database, so generate_mps lines in run_pipeline can be commented out and steps 2-7 can be skipped. 
 
